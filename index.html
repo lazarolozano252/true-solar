@@ -871,6 +871,34 @@
       return;
     }
 
+    // Build fecha legible en español
+    var ahora = new Date();
+    var fecha = ahora.toLocaleDateString('es-PR', {
+      weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
+    }) + ' ' + ahora.toLocaleTimeString('es-PR', {
+      hour: '2-digit', minute: '2-digit', second: '2-digit'
+    });
+
+    var payload = {
+      nombre:   name.value.trim(),
+      telefono: phone.value.trim(),
+      pueblo:   town.value.trim(),
+      gasto:    luz.options[luz.selectedIndex].text,
+      credito:  score.options[score.selectedIndex].text,
+      techo:    techo.options[techo.selectedIndex].text,
+      fecha:    fecha
+    };
+
+    // Send to n8n — show confirmation regardless of result
+    fetch('https://amnsystems.app.n8n.cloud/webhook/truesolar-leads', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    }).catch(function () { /* silent fail */ });
+
+    // Meta Pixel Lead event
+    if (typeof fbq === 'function') fbq('track', 'Lead');
+
     // Show confirmation
     document.getElementById('form-wrap').style.display = 'none';
     var c = document.getElementById('confirm-wrap');
