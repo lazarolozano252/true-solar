@@ -425,6 +425,117 @@
     </div>
   </div>
 
+  <!-- ── URGENCY BAR ── -->
+  <div class="urgency">
+    <div class="urgency-msg">
+      Solo quedan <em>12 instalaciones</em> para mayo<br>— el resto ya fue reclamado
+    </div>
+    <div class="progress-bar"><div class="progress-fill"></div></div>
+    <div class="progress-note">78% de cupos tomados</div>
+  </div>
+
+  <!-- ── COUNTDOWN ── -->
+  <div class="countdown">
+    <div class="countdown-lbl">La oferta vence el 31 de mayo en</div>
+    <div class="countdown-units">
+      <div class="cd-block">
+        <div class="cd-num" id="cd-d">00</div>
+        <div class="cd-lbl">Días</div>
+      </div>
+      <div class="cd-sep">:</div>
+      <div class="cd-block">
+        <div class="cd-num" id="cd-h">00</div>
+        <div class="cd-lbl">Horas</div>
+      </div>
+      <div class="cd-sep">:</div>
+      <div class="cd-block">
+        <div class="cd-num" id="cd-m">00</div>
+        <div class="cd-lbl">Min</div>
+      </div>
+      <div class="cd-sep">:</div>
+      <div class="cd-block">
+        <div class="cd-num" id="cd-s">00</div>
+        <div class="cd-lbl">Seg</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── FORM ── -->
+  <div class="form-wrap" id="form-wrap">
+    <div class="form-h">Reserva tu cupo ahora</div>
+    <div class="form-desc">Completa el formulario — un especialista te contacta en menos de 24&nbsp;horas</div>
+
+    <form id="lead-form" novalidate>
+
+      <div class="fgroup">
+        <input type="text" id="f-name" placeholder="Nombre completo" autocomplete="name">
+      </div>
+
+      <div class="fgroup">
+        <input type="tel" id="f-phone" placeholder="(XXX) XXX-XXXX" autocomplete="tel" maxlength="14">
+      </div>
+
+      <div class="fgroup">
+        <input type="text" id="f-town" placeholder="Pueblo">
+      </div>
+
+      <div class="fgroup">
+        <div class="sel-wrap">
+          <select id="f-luz">
+            <option value="" disabled selected>Gasto de luz</option>
+            <option value="lt100">Menos de $100</option>
+            <option value="100-200">$100–$200</option>
+            <option value="200-350">$200–$350</option>
+            <option value="350-500">$350–$500</option>
+            <option value="gt500">Más de $500</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="fgroup">
+        <div class="sel-wrap">
+          <select id="f-score">
+            <option value="" disabled selected>Score de crédito</option>
+            <option value="good">Bueno (640+)</option>
+            <option value="excellent">Excelente (680+)</option>
+            <option value="perfect">Perfecto (700+)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="fgroup">
+        <div class="sel-wrap">
+          <select id="f-techo">
+            <option value="" disabled selected>Tipo de techo</option>
+            <option value="galvalum">Galvalum</option>
+            <option value="cemento">Cemento</option>
+          </select>
+        </div>
+      </div>
+
+      <button type="submit" class="btn-cta">¡Quiero mis 2 baterías + 10 placas!</button>
+    </form>
+  </div>
+
+  <!-- ── CONFIRMATION ── -->
+  <div class="confirm-wrap" id="confirm-wrap">
+    <div class="confirm-check">
+      <svg viewBox="0 0 36 36" fill="none">
+        <path d="M6 18l9 9 15-15" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <div class="confirm-h">¡Solicitud recibida!</div>
+    <p class="confirm-p">Un representante de True Solar te contactará en menos de 24 horas para confirmar tu cupo.</p>
+    <div class="confirm-box">
+      <ul>
+        <li>Solo quedan 12 cupos disponibles para mayo — los espacios se están llenando rápido.</li>
+        <li>Esta oferta vence el 31 de mayo sin prórroga ni excepción alguna.</li>
+        <li>Tu cupo NO está confirmado hasta que te llamemos.</li>
+      </ul>
+    </div>
+    <p class="confirm-note">Mantén tu teléfono disponible. Te llamamos lo antes posible para no perder tu espacio.</p>
+  </div>
+
   <!-- ── HERO SVG ── -->
   <div class="hero-wrap">
     <svg viewBox="0 0 480 300" xmlns="http://www.w3.org/2000/svg">
@@ -665,117 +776,6 @@
       </div>
       <span>10 Placas solares incluidas</span>
     </div>
-  </div>
-
-  <!-- ── URGENCY BAR ── -->
-  <div class="urgency">
-    <div class="urgency-msg">
-      Solo quedan <em>12 instalaciones</em> para mayo<br>— el resto ya fue reclamado
-    </div>
-    <div class="progress-bar"><div class="progress-fill"></div></div>
-    <div class="progress-note">78% de cupos tomados</div>
-  </div>
-
-  <!-- ── COUNTDOWN ── -->
-  <div class="countdown">
-    <div class="countdown-lbl">La oferta vence el 31 de mayo en</div>
-    <div class="countdown-units">
-      <div class="cd-block">
-        <div class="cd-num" id="cd-d">00</div>
-        <div class="cd-lbl">Días</div>
-      </div>
-      <div class="cd-sep">:</div>
-      <div class="cd-block">
-        <div class="cd-num" id="cd-h">00</div>
-        <div class="cd-lbl">Horas</div>
-      </div>
-      <div class="cd-sep">:</div>
-      <div class="cd-block">
-        <div class="cd-num" id="cd-m">00</div>
-        <div class="cd-lbl">Min</div>
-      </div>
-      <div class="cd-sep">:</div>
-      <div class="cd-block">
-        <div class="cd-num" id="cd-s">00</div>
-        <div class="cd-lbl">Seg</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ── FORM ── -->
-  <div class="form-wrap" id="form-wrap">
-    <div class="form-h">Reserva tu cupo ahora</div>
-    <div class="form-desc">Completa el formulario — un especialista te contacta en menos de 24&nbsp;horas</div>
-
-    <form id="lead-form" novalidate>
-
-      <div class="fgroup">
-        <input type="text" id="f-name" placeholder="Nombre completo" autocomplete="name">
-      </div>
-
-      <div class="fgroup">
-        <input type="tel" id="f-phone" placeholder="(XXX) XXX-XXXX" autocomplete="tel" maxlength="14">
-      </div>
-
-      <div class="fgroup">
-        <input type="text" id="f-town" placeholder="Pueblo">
-      </div>
-
-      <div class="fgroup">
-        <div class="sel-wrap">
-          <select id="f-luz">
-            <option value="" disabled selected>Gasto de luz</option>
-            <option value="lt100">Menos de $100</option>
-            <option value="100-200">$100–$200</option>
-            <option value="200-350">$200–$350</option>
-            <option value="350-500">$350–$500</option>
-            <option value="gt500">Más de $500</option>
-          </select>
-        </div>
-      </div>
-
-      <div class="fgroup">
-        <div class="sel-wrap">
-          <select id="f-score">
-            <option value="" disabled selected>Score de crédito</option>
-            <option value="good">Bueno (640+)</option>
-            <option value="excellent">Excelente (680+)</option>
-            <option value="perfect">Perfecto (700+)</option>
-          </select>
-        </div>
-      </div>
-
-      <div class="fgroup">
-        <div class="sel-wrap">
-          <select id="f-techo">
-            <option value="" disabled selected>Tipo de techo</option>
-            <option value="galvalum">Galvalum</option>
-            <option value="cemento">Cemento</option>
-          </select>
-        </div>
-      </div>
-
-      <button type="submit" class="btn-cta">¡Quiero mis 2 baterías + 10 placas!</button>
-    </form>
-  </div>
-
-  <!-- ── CONFIRMATION ── -->
-  <div class="confirm-wrap" id="confirm-wrap">
-    <div class="confirm-check">
-      <svg viewBox="0 0 36 36" fill="none">
-        <path d="M6 18l9 9 15-15" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    </div>
-    <div class="confirm-h">¡Solicitud recibida!</div>
-    <p class="confirm-p">Un representante de True Solar te contactará en menos de 24 horas para confirmar tu cupo.</p>
-    <div class="confirm-box">
-      <ul>
-        <li>Solo quedan 12 cupos disponibles para mayo — los espacios se están llenando rápido.</li>
-        <li>Esta oferta vence el 31 de mayo sin prórroga ni excepción alguna.</li>
-        <li>Tu cupo NO está confirmado hasta que te llamemos.</li>
-      </ul>
-    </div>
-    <p class="confirm-note">Mantén tu teléfono disponible. Te llamamos lo antes posible para no perder tu espacio.</p>
   </div>
 
   <!-- ── FOOTER ── -->
